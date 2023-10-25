@@ -1,0 +1,174 @@
+@media (max-width:1200px)
+    // .btn
+    //     +btn_hover
+    // &_white
+    //     background: #FFFFFF
+    //     color: $gray
+    .person
+        width: 451px
+    .comments
+        width: 300px
+@media (max-width: 991px)
+
+    header
+        height: 54px
+    .title
+        font-size: 36px
+        line-height: 36px
+    .menu
+        &_link
+            padding: 31px 10px
+    .about
+        margin-top: 20px
+        &_header
+            padding-top: 700px
+            font-size: 49px
+    .logo
+        margin-top: 55px
+        &_img
+            width: 174px
+            height: auto
+    .space
+        margin-top: 38px
+        &_wrapper
+            padding: 573px 0px 0 2px
+    .start
+        margin-top: 27px
+        .title
+            margin-top: 46px
+        &_btns
+            flex-direction: column
+            .btn
+                margin-top: 18px
+    .customers
+        margin-top: 49px
+    .person
+        width: 100%
+        margin-top: 29px
+    .thanks
+        margin-top: 45px
+@media (max-width: 767px)
+
+    .title
+        font-size: 28px
+    .explanation
+        font-size: 14px
+    .btn
+        width: 160px
+        height: 46px
+        font-size: 14px
+    .about
+        &_header
+            font-size: 32px
+            line-height: 35px
+    .menu
+        position: fixed
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        flex-direction: column
+        justify-content: center
+        padding: 20px 15px
+        background-color: rgba(255,255,255, 0.8)
+        z-index: 10
+        transition: 0.6s all
+        &_active
+            left: 0
+        &_item
+            border: none
+            padding: 0
+        &_link
+            font-size: 20px
+    .comments
+        width: 100%
+
+    .nav
+        position: relative
+    .hamburger
+        display: block
+        position: absolute
+        width: 20px
+        right: 10px
+        transition: 5s all
+        // top: 50%
+        // translate: translateY(-50%)
+        height: 12px
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    span
+        display: block
+        width: 100%
+        height: 2px
+            // background-color: white
+        background-color: $gray
+        margin-bottom: 2px
+    .logo
+        &_img
+            width: 116px
+            height: auto
+    .space
+        .btn
+            display: block
+            margin: 25px auto
+    .start
+        .title
+            margin-top: 500px
+            text-align: center
+        .explanation
+            text-align: center
+        &_btns
+            margin-top: 0
+            width: 100%
+            flex-direction: row
+            justify-content: space-evenly
+    .wrapper_stcu
+        min-height: 500px
+        justify-content: center
+        .customers
+            min-height: 300px
+            margin-top: 41px
+            .person
+                margin: 15px 0
+    .features
+        &_header
+            font-size: 20px
+    .comments
+        min-height: 300px
+        margin-top: 20px
+        &_wrapper
+            margin-top: 4px
+        &_person
+            margin-top: 3px
+            margin: 0
+    .expert
+        .title
+            display: none
+        .explanation
+            display: none
+
+    .footer
+        &_wrapper
+            display: none
+@media (max-width: 575px)
+    .logo
+        display: none
+    .features
+        margin: 10px 0 11px 0
+        max-width: 100%
+        text-align: center
+    .menu
+        width: 85%
+        &_item
+            width: 100%
+            text-align: center
+        &_link
+            display: block
+            padding: 16px 10px
